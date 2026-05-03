@@ -1,34 +1,34 @@
-# Corn Leaf Disease Classification 🌽
+# Klasifikasi Penyakit Daun Jagung 🌽
 
-This repository contains a Deep Learning project for classifying corn leaf conditions using the **MobileNetV3-Small** architecture in PyTorch. It was developed to accurately identify plant health states and diseases, achieving outstanding evaluation metrics on the test dataset.
+Repositori ini berisi proyek *Deep Learning* untuk mengklasifikasikan kondisi daun jagung menggunakan arsitektur **MobileNetV3-Small** dengan PyTorch. Proyek ini dikembangkan untuk mengidentifikasi status kesehatan dan penyakit pada tanaman dengan akurat, dan berhasil mencapai hasil evaluasi yang sangat baik pada data uji.
 
-## 🚀 Project Overview
+## 🚀 Ringkasan Proyek
 
-The main objective of this project is to automate the detection of diseases in corn leaves. By utilizing a lightweight and efficient Convolutional Neural Network (CNN) architecture—MobileNetV3-Small—the model can perform rapid inferences while maintaining high accuracy, making it suitable for edge devices or mobile applications.
+Tujuan utama dari proyek ini adalah untuk mengotomatisasi deteksi penyakit pada daun jagung. Dengan memanfaatkan arsitektur *Convolutional Neural Network* (CNN) yang ringan dan efisien—yaitu MobileNetV3-Small—model dapat melakukan inferensi dengan cepat namun tetap mempertahankan tingkat akurasi yang tinggi. Hal ini membuatnya sangat cocok untuk diaplikasikan pada perangkat *mobile* atau sistem komputasi ringan.
 
-### Key Highlights
-- **Architecture:** PyTorch implementation of `MobileNetV3-Small`.
-- **Performance:** Achieved excellent precision and recall on the test set, with perfect predictions on the final evaluation batch.
-- **Data Pipeline:** Built with custom PyTorch DataLoaders, robust image transformations (augmentation), and disciplined dataset splitting for reliable training.
+### Poin Utama
+- **Arsitektur:** Implementasi `MobileNetV3-Small` menggunakan PyTorch.
+- **Performa:** Mencapai tingkat presisi dan *recall* yang luar biasa pada *test set*, dengan prediksi yang sempurna (tidak ada yang salah tebak) pada evaluasi akhir.
+- **Pipeline Data:** Dibangun dengan DataLoader bawaan PyTorch, transformasi gambar (*augmentation*) yang baik, serta pembagian *dataset* yang proporsional agar pelatihan model stabil.
 
-## 📁 Repository Structure
+## 📁 Struktur Repositori
 
-- `corn_classification.ipynb` - The main Jupyter Notebook containing the complete end-to-end pipeline (Data Cleaning, Preprocessing, Model Building, Training, Validation, and Evaluation).
-- `Laporan_Corn_Classification.docx` - The comprehensive project report documenting the methodology, experiments, and results (in Indonesian).
+- `corn_classification.ipynb` - File Jupyter Notebook utama yang berisi seluruh tahapan proses dari awal hingga akhir (Pembersihan Data, *Preprocessing*, Pembuatan Model, Pelatihan, Validasi, dan Evaluasi).
+- `Laporan_Corn_Classification.docx` - Laporan komprehensif proyek yang mendokumentasikan metodologi, jalannya eksperimen, dan hasil akhir.
 
-## 🛠️ Tech Stack
+## 🛠️ Teknologi yang Digunakan
 
 - **Python**
-- **PyTorch & Torchvision** (Model Architecture, DataLoader, Transforms)
-- **Matplotlib** (Data Visualization)
-- **NumPy & Pandas** (Data Manipulation)
-- **Scikit-learn** (Metrics & Evaluation)
+- **PyTorch & Torchvision** (Arsitektur Model, DataLoader, Transformasi)
+- **Matplotlib** (Visualisasi Data)
+- **NumPy & Pandas** (Manipulasi Data)
+- **Scikit-learn** (Metrik & Evaluasi)
 
-## 📊 Methodology
+## 📊 Metodologi
 
-1. **Data Preprocessing & Augmentation:** Images were cleaned, resized, normalized, and augmented to improve model generalization and prevent overfitting.
-2. **Model Training:** Utilized the `MobileNetV3-Small` architecture, optimizing with standard loss functions and optimizers for image classification.
-3. **Evaluation:** The model was rigorously validated during training and tested on an unseen holdout set. The notebook includes detailed visualizations of the model's predictions.
+1. **Preprocessing & Augmentasi Data:** Gambar daun dibersihkan, diubah ukurannya, dinormalisasi, dan diberikan augmentasi untuk meningkatkan kemampuan generalisasi model serta mencegah *overfitting*.
+2. **Pelatihan Model:** Menggunakan arsitektur `MobileNetV3-Small`, dioptimasi dengan fungsi *loss* dan *optimizer* standar untuk klasifikasi gambar.
+3. **Evaluasi:** Model divalidasi secara ketat selama proses pelatihan dan diuji coba pada data yang belum pernah dilihat sebelumnya (*holdout set*). Di dalam notebook juga disertakan visualisasi detail dari prediksi model.
 
 ---
-*This project is part of a Machine Learning & Data Science portfolio by Zalsa.*
+*Proyek ini merupakan bagian dari portofolio Machine Learning & Data Science milik Zalsa.*
